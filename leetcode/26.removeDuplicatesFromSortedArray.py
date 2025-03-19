@@ -1,9 +1,9 @@
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
-        
+
         # Creates a set to store all the unique numbers.
         numsAsSet = set()
-        
+
         # Stores the initial length of nums.
         length = len(nums)
 
@@ -22,16 +22,16 @@ class Solution:
                 # Decrement the current index to not go over the length.
                 index -= 1
 
-                # Decrement the length to make it accurate to the new length of 
+                # Decrement the length to make it accurate to the new length of
                 # nums.
                 length -= 1
-            
+
             # Else the number at the current index is not in the set...
             else:
 
                 # Add the new unique number to the set.
                 numsAsSet.add(nums[index])
-            
+
             # Increment the current index for the next iteration.
             index += 1
 

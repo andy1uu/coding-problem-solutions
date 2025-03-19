@@ -1,10 +1,13 @@
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
-        # If the two words with their letters sorted are equal to each other than they are anagrams because you can rearrange the letters to get either word.
+        # If the two words with their letters sorted are equal to each other 
+        # than they are anagrams because you can rearrange the letters to get 
+        # either word.
         return sorted(s) == sorted(t)
 
     def isAnagram(self, s: str, t: str) -> bool:
-        # If the lengths of the strings are not the same, they can not be anagrams.
+        # If the lengths of the strings are not the same, they can not be 
+        # anagrams.
         if len(s) != len(t):
             return False
 
