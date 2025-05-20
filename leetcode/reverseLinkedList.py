@@ -18,7 +18,7 @@ class Solution:
             # Store the rest of the list in a temp Node.
             tempNode = currNode.next
             
-            # Set the curret Node's next to the previous Node.
+            # Set the current Node's next to the previous Node.
             currNode.next = prevNode
             
             # Set the new previous Node to the current Node.
